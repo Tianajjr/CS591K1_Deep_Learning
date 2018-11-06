@@ -1,6 +1,6 @@
 import sys
 sys.path.append('/path/to/Mozarella/')
-from mozarella import midi_embedding_generator,generate_midi_from_embeddings
+#from mozarella import midi_embedding_generator,generate_midi_from_embeddings
 import os
 import random
 import copy
