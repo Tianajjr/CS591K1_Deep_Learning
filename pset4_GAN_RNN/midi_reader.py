@@ -70,7 +70,7 @@ def _batch_midi_generator(all_raw_node, all_raw_duration, batch_size=20, seq_siz
     for i in range(n_batches):
         batch_list = []
         for j in range(i*batch_size,(i+1)*batch_size):
-            start_pos = random.randint(len(all_raw_node[j])-seq_size-1,len(all_raw_node[j])-1)
+            start_pos = random.randint(0,len(all_raw_node[j])-seq_size-1)
             batch_x = all_raw_node[j][start_pos:seq_size+start_pos]
             batch_y = all_raw_node[j][seq_size+start_pos]
             batch_d = all_raw_duration[j][start_pos:seq_size+start_pos]
